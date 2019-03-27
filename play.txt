@@ -1,0 +1,30 @@
+// package main
+
+// import (
+// 	"fmt"
+// 	"net/http"
+// )
+
+// func index(w http.ResponseWriter, r *http.Request) {
+// 	fmt.Fprintf(w, "<h1><a href='/about'>About<a></h1><h1><a href='/'>Home<a></h1>")
+// }
+
+// func about(w http.ResponseWriter, r *http.Request) {
+// 	fmt.Fprintf(w, "<h1><a href='/index'>Index<a></h1><h1><a href='/'>Home<a></h1>")
+// }
+
+// func home(w http.ResponseWriter, r *http.Request) {
+// 	fmt.Fprintf(w, "<h1><a href='/index'>Index<a></h1><h1><a href='/about'>About<a></h1>")
+// }
+
+// func main() {
+// 	// Creating handlers
+// 	http.HandleFunc("/", home)
+// 	http.HandleFunc("/about", about)
+// 	http.HandleFunc("/index", index)
+
+// 	fmt.Println("Server starting...")
+
+// 	// Creating the server
+// 	http.ListenAndServe(":3001", nil)
+// }
